@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathBasic", "MathBasic\MathBasic.csproj", "{40A56F6B-3226-A4FF-A674-4399B2568607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40A56F6B-3226-A4FF-A674-4399B2568607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A56F6B-3226-A4FF-A674-4399B2568607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A56F6B-3226-A4FF-A674-4399B2568607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A56F6B-3226-A4FF-A674-4399B2568607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61689009-0F4F-4B7E-9385-E6D3D38C86EE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+/workspaces/MathBasic/MathBasic/bin/Debug/net6.0/MathBasic
+/workspaces/MathBasic/MathBasic/bin/Debug/net6.0/MathBasic.deps.json
+/workspaces/MathBasic/MathBasic/bin/Debug/net6.0/MathBasic.runtimeconfig.json
+/workspaces/MathBasic/MathBasic/bin/Debug/net6.0/MathBasic.dll
+/workspaces/MathBasic/MathBasic/bin/Debug/net6.0/MathBasic.pdb
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.AssemblyInfoInputs.cache
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.AssemblyInfo.cs
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.csproj.CoreCompileInputs.cache
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.sourcelink.json
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.dll
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/refint/MathBasic.dll
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.pdb
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/MathBasic.genruntimeconfig.cache
+/workspaces/MathBasic/MathBasic/obj/Debug/net6.0/ref/MathBasic.dll
