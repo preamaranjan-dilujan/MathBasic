@@ -6,7 +6,8 @@ namespace MathBasic
     {
         static void Main(string[] args)
         {
-            CountDigitInANumber(12345);
+            // CountDigitInANumber(325345);
+            CornerDigitsSum(5);
 
         }
 
@@ -21,5 +22,27 @@ namespace MathBasic
             Console.WriteLine($"The number of digits is: {count}");
 
         }
+        static void CornerDigitsSum(int number)
+        {
+            int n = number;
+            int count = 1;
+            int lastDigit = 0, firstDigit = 0;
+            while (n > 0)
+            {
+            int digit = n % 10;
+            n = n / 10;
+            if (count == 1)
+            {
+                lastDigit = digit;
+            }
+            if (count > 1 && n == 0)
+            {
+                firstDigit = digit;
+            }
+            count++;
+            }
+            Console.WriteLine(lastDigit + firstDigit);
+        }
+
     }
 }
