@@ -8,7 +8,8 @@ namespace MathBasic
         {
             // CountDigitInANumber(325345);
             // CornerDigitsSum(5);
-            Console.WriteLine(kthDigit(5, 2, 2)); // Should return 4
+            // Console.WriteLine(kthDigit(5, 2, 2)); // Should return 4
+            Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
 
         }
 
@@ -61,6 +62,26 @@ namespace MathBasic
                 count++;
             }
             return kthDigit;
+        }
+
+        static string PalindromeOfANumber(int number)
+        {
+            int originalNumber = number;
+            int sum = 0;
+            while (number > 0)
+            {
+            int lastDigit = number % 10;
+            sum += lastDigit;
+            number = number / 10;
+            }
+            if (sum == originalNumber)
+            {
+            return "Palindrome";
+            }
+            else
+            {
+            return "Not Palindrome";
+            }
         }
 
     }
