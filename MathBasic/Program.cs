@@ -71,7 +71,7 @@ namespace MathBasic
             while (number > 0)
             {
             int lastDigit = number % 10;
-            sum += lastDigit;
+            sum = (sum*10) + lastDigit;
             number = number / 10;
             }
             if (sum == originalNumber)
