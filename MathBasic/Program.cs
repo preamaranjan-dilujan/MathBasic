@@ -10,7 +10,8 @@ namespace MathBasic
             // CornerDigitsSum(5);
             // Console.WriteLine(kthDigit(5, 2, 2)); // Should return 4
             // Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
-            Console.WriteLine(ReverseANumber(12345)); // Should return 54321
+            // Console.WriteLine(ReverseANumber(12345)); // Should return 54321
+            Console.WriteLine(Factorial(5)); // Should return 120
         }
 
         static void CountDigitInANumber(int number)
@@ -70,17 +71,17 @@ namespace MathBasic
             int sum = 0;
             while (number > 0)
             {
-            int lastDigit = number % 10;
-            sum = (sum*10) + lastDigit;
-            number = number / 10;
+                int lastDigit = number % 10;
+                sum = (sum * 10) + lastDigit;
+                number = number / 10;
             }
             if (sum == originalNumber)
             {
-            return "Palindrome";
+                return "Palindrome";
             }
             else
             {
-            return "Not Palindrome";
+                return "Not Palindrome";
             }
         }
 
@@ -94,6 +95,17 @@ namespace MathBasic
                 number = number / 10;
             }
             return reversedNumber;
+        }
+
+        static int Factorial(int n)
+        {
+            // code here
+            int fact = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                fact = fact * i;
+            }
+            return fact;
         }
 
 
