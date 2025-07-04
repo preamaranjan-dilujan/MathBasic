@@ -9,8 +9,8 @@ namespace MathBasic
             // CountDigitInANumber(325345);
             // CornerDigitsSum(5);
             // Console.WriteLine(kthDigit(5, 2, 2)); // Should return 4
-            Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
-
+            // Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
+            Console.WriteLine(ReverseANumber(12345)); // Should return 54321
         }
 
         static void CountDigitInANumber(int number)
@@ -83,6 +83,19 @@ namespace MathBasic
             return "Not Palindrome";
             }
         }
+
+        static int ReverseANumber(int number)
+        {
+            int reversedNumber = 0;
+            while (number > 0)
+            {
+                int lastDigit = number % 10;
+                reversedNumber = (reversedNumber * 10) + lastDigit;
+                number = number / 10;
+            }
+            return reversedNumber;
+        }
+
 
     }
 }
