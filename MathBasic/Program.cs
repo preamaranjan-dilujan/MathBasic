@@ -11,7 +11,8 @@ namespace MathBasic
             // Console.WriteLine(kthDigit(5, 2, 2)); // Should return 4
             // Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
             // Console.WriteLine(ReverseANumber(12345)); // Should return 54321
-            Console.WriteLine(Factorial(5)); // Should return 120
+            // Console.WriteLine(Factorial(5)); // Should return 120
+            Console.WriteLine(isPrime(7)); // Should return true
         }
 
         static void CountDigitInANumber(int number)
@@ -106,6 +107,24 @@ namespace MathBasic
                 fact = fact * i;
             }
             return fact;
+        }
+
+        static bool isPrime(int n)
+        {
+            // code here
+            if (n <= 1)
+            {
+                return false;
+            }
+            for (int i = 2; i < n; i++)
+            {
+                int remainder = n % i;
+                if (remainder == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
 
