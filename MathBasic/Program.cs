@@ -128,10 +128,11 @@ namespace MathBasic
             return true;
         }
 
-        static void printAllPrimeNumbers(int number){
+        static void printAllPrimeNumbers(int number)
+        {
             for (int i = 2; i <= number; i++)
             {
-            bool notAPrimeNumber = false;
+                bool notAPrimeNumber = false;
 
                 for (int j = 2; j < i; j++)
                 {
@@ -146,6 +147,20 @@ namespace MathBasic
                     Console.WriteLine(i);
                 }
             }
+        }
+
+        static int countDivisors(int n)
+        {
+            // Code here.
+            int count = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (n % i == 0 && i % 3 == 0)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
 
 
