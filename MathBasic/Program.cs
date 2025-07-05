@@ -12,7 +12,8 @@ namespace MathBasic
             // Console.WriteLine(PalindromeOfANumber(121)); // Should return "Palindrome"
             // Console.WriteLine(ReverseANumber(12345)); // Should return 54321
             // Console.WriteLine(Factorial(5)); // Should return 120
-            Console.WriteLine(isPrime(7)); // Should return true
+            // Console.WriteLine(isPrime(7)); // Should return true
+            printAllPrimeNumbers(5);
         }
 
         static void CountDigitInANumber(int number)
@@ -125,6 +126,26 @@ namespace MathBasic
                 }
             }
             return true;
+        }
+
+        static void printAllPrimeNumbers(int number){
+            for (int i = 2; i <= number; i++)
+            {
+            bool notAPrimeNumber = false;
+
+                for (int j = 2; j < i; j++)
+                {
+                    int remainder = i % j;
+                    if (remainder == 0)
+                    {
+                        notAPrimeNumber = true;
+                    }
+                }
+                if (!notAPrimeNumber)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
 
 
