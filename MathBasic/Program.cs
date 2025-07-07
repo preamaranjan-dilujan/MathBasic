@@ -186,6 +186,5 @@ namespace MathBasic
             return false; // It's not a perfect number
         }
 
-
     }
 }
