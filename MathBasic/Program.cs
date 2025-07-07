@@ -13,7 +13,9 @@ namespace MathBasic
             // Console.WriteLine(ReverseANumber(12345)); // Should return 54321
             // Console.WriteLine(Factorial(5)); // Should return 120
             // Console.WriteLine(isPrime(7)); // Should return true
-            printAllPrimeNumbers(5);
+            // printAllPrimeNumbers(5);
+            // Console.WriteLine(countDivisors(12)); // Should return 4 (1, 3, 6, 12)
+            Console.WriteLine(findPerfectNumber(6)); // Should return true
         }
 
         static void CountDigitInANumber(int number)
@@ -161,6 +163,27 @@ namespace MathBasic
                 }
             }
             return count;
+        }
+
+        static bool findPerfectNumber(int number)
+        {
+            int sum = 1;
+            for (int i = 2; i < Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                {
+                    sum += i;
+                    if (i != number / i) // Avoid adding the square root twice
+                    {
+                        sum += number / i;
+                    }
+                }
+            }
+            if (sum == number && number != 1)
+            {
+                return true; // It's a perfect number
+            }
+            return false; // It's not a perfect number
         }
 
 
