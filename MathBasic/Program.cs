@@ -186,5 +186,19 @@ namespace MathBasic
             return false; // It's not a perfect number
         }
 
+        static int FindGCD(int a, int b, int i)
+        {
+            int gcd = 1;
+            for (int j = 1; j <= i; j++)
+            {
+                if (a % j == 0 && b % j == 0)
+                {
+                    gcd = j; // Update gcd if both numbers are divisible by j
+                }
+            }
+            return gcd;
+
+        }
+
     }
 }
